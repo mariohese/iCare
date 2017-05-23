@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+         version="2.5">
+
+  <filter>
+  	<filter-name>ObjectifyFilter</filter-name>
+  	<filter-class>com.googlecode.objectify.ObjectifyFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>ObjectifyFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+    <servlet-name>RandomGeneratorServlet</servlet-name>
+    <servlet-class>es.upm.dit.isst.icare.RandomGeneratorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RandomGeneratorServlet</servlet-name>
+    <url-pattern>/generator</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AlarmManagementServlet</servlet-name>
+    <servlet-class>es.upm.dit.isst.icare.AlarmManagementServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AlarmManagementServlet</servlet-name>
+    <url-pattern>/alarm_management</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AlarmContactManagServlet</servlet-name>
+    <servlet-class>es.upm.dit.isst.icare.AlarmContactManagServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AlarmContactManagServlet</servlet-name>
+    <url-pattern>/alarmcontact_management</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SaveAlarmServlet</servlet-name>
+    <servlet-class>es.upm.dit.isst.icare.SaveAlarmServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SaveAlarmServlet</servlet-name>
+    <url-pattern>/save_alarm</url-pattern>
+  </servlet-mapping>
+  
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>es.upm.dit.isst.icare.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AdminServlet</servlet-name>
+    <servlet-class>es.upm.dit.isst.icare.AdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CreateOpAdminServlet</servlet-name>
+    <servlet-class>es.upm.dit.isst.icare.CreateOpAdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateOpAdminServlet</servlet-name>
+    <url-pattern>/createop</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CreatePacAdminServlet</servlet-name>
+    <servlet-class>es.upm.dit.isst.icare.CreatePacAdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreatePacAdminServlet</servlet-name>
+    <url-pattern>/createpac</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeleteOpAdminServlet</servlet-name>
+    <servlet-class>es.upm.dit.isst.icare.DeleteOpAdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteOpAdminServlet</servlet-name>
+    <url-pattern>/deleteop</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeletePacAdminServlet</servlet-name>
+    <servlet-class>es.upm.dit.isst.icare.DeletePacAdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeletePacAdminServlet</servlet-name>
+    <url-pattern>/deletepac</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>MainServlet</servlet-name>
+    <servlet-class>es.upm.dit.isst.icare.MainServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MainServlet</servlet-name>
+    <url-pattern>/main</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>PatientsServlet</servlet-name>
+    <servlet-class>es.upm.dit.isst.icare.PatientsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientsServlet</servlet-name>
+    <url-pattern>/patients</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AnomaliesServlet</servlet-name>
+    <servlet-class>es.upm.dit.isst.icare.AnomaliesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AnomaliesServlet</servlet-name>
+    <url-pattern>/anomalies</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>InfoPatientServlet</servlet-name>
+    <servlet-class>es.upm.dit.isst.icare.InfoPatientServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InfoPatientServlet</servlet-name>
+    <url-pattern>/info_patient</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

@@ -1,0 +1,251 @@
+@CHARSET "ISO-8859-1";
+
+#cabecera {
+	text-align:center;
+	margin-top: 30px;
+	padding-bottom: 10%;
+	
+}
+#logo {
+	margin-bottom: 30px;
+	margin-left: 40px;
+	display: inline-block;
+	float: left;
+}
+#contacto {
+	width: 50px;
+	display: inline-block;
+	float: left;
+	margin-left: 180px;
+	
+}
+#usuario {
+	margin-bottom: 30px;
+	display: inline-block;
+		float: right;
+		margin-right: 70px;
+}
+#icus {
+	display: inline-block;
+}
+#nous {
+		display: inline-block;
+		margin-left: 10px;	
+}
+#navegacion {
+	clear:both;
+}
+#nav {
+	margin-left: 10%;
+	margin-bottom: 5%;
+}
+.datos {
+	margin-left: 10%;
+}
+#contenido {
+	clear:both;
+}
+.info_cabecera {
+	float: left;
+	clear: both;
+}
+.foto_cabecera {
+	float: right;
+	margin-right: 5%;
+}
+#contacto_cui {
+	margin-right: 45%;
+}
+#encabezado_cui {
+	margin-right: 45%;
+}
+.boton_acc {
+	display: block;
+}
+
+#acciones {
+	float: left;
+	clear: both;
+	padding-left: 25%;
+	margin-top: 5%;
+}
+#map-canvas {
+	float: right;
+	margin-right: 20%;
+	margin-top: 5%;
+	width: 70%;
+}
+#nav {
+	clear: both;
+	margin-top: 40px;
+	padding-top: 40px;
+}
+table {
+	background: #f5f5f5;
+	border-collapse: separate;
+	box-shadow: inset 0 1px 0 #fff;
+	font-size: 12px;
+	line-height: 24px;
+	text-align: left;
+	clear: both;
+}	
+
+th {
+	background: url(http://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#777, #444);
+	border-left: 1px solid #555;
+	border-right: 1px solid #777;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #333;
+	box-shadow: inset 0 1px 0 #999;
+	color: #fff;
+  	font-weight: bold;
+	padding: 10px 15px;
+	position: relative;
+	text-shadow: 0 1px 0 #000;
+	font-size: 1em;
+}
+tr th {
+	background:rgba(42, 81, 187, 1);
+}
+
+th:after {
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+	content: '';
+	display: block;
+	height: 25%;
+	left: 0;
+	margin: 1px 0 0 0;
+	position: absolute;
+	top: 25%;
+	width: 100%;
+}
+
+th:first-child {
+	border-left: 1px solid #0080c0;	
+	box-shadow: inset 1px 1px 0 #999;
+}
+
+th:last-child {
+	box-shadow: inset -1px 1px 0 #999;
+}
+
+td {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #e8e8e8;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 10px 15px;
+	position: relative;
+	transition: all 300ms;
+	font-size: 1em;
+}
+
+td:first-child {
+	box-shadow: inset 1px 0 0 #fff;
+}	
+
+td:last-child {
+	border-right: 1px solid #e8e8e8;
+	box-shadow: inset -1px 0 0 #fff;
+}	
+
+tr {
+	background: url(http://jackrugile.com/images/misc/noise-diagonal.png);	
+}
+
+tr:nth-child(odd) td {
+	background: #f1f1f1 url(http://jackrugile.com/images/misc/noise-diagonal.png);	
+}
+
+tr:last-of-type td {
+	box-shadow: inset 0 -1px 0 #fff; 
+}
+
+tr:last-of-type td:first-child {
+	box-shadow: inset 1px -1px 0 #fff;
+}	
+
+tr:last-of-type td:last-child {
+	box-shadow: inset -1px -1px 0 #fff;
+}	
+
+tbody:hover td {
+	color: transparent;
+	text-shadow: 0 0 3px #aaa;
+}
+
+tbody:hover tr:hover td {
+	color: #444;
+	text-shadow: 0 1px 0 #fff;
+}
+.bloque {
+	font-size:font: bold 1em/1 'trebuchet MS', Arial, Helvetica; 
+	padding: .8em 1.5em;
+	display: block;
+	margin-bottom: 15px;
+	background: #82d813;
+	color: #ffffff;
+	width: 95%;
+	
+}
+.bloque:hover, .bloque:focus {
+	background: #ee423f;
+	color: #ffffff;
+}
+
+
+
+
+.boton_nav {
+    padding: .8em 1.5em;
+    text-decoration: none;
+    color: #040d2a;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    font: bold 1em/1 'trebuchet MS', Arial, Helvetica;
+    letter-spacing: 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff #ccc #999 #eee;
+    background: #123dca;
+    background: linear-gradient(#f5f5f5, #c1c1c1);            
+ }
+ 
+.boton_nav:hover, .boton_nav:focus {
+    outline: 0;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,.2);
+    background: #2f6dca;
+    background: linear-gradient(#2f6dca, #2f6dca);
+}
+
+.boton_nav:active {
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.3) inset;
+}
+
+a {
+    float:left;
+    padding: .8em 1.5em;
+    text-decoration: none;
+    color: #555;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    font: bold 1.1em/1 'trebuchet MS', Arial, Helvetica;
+    letter-spacing: 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff #ccc #999 #eee;
+    background: #c1c1c1;
+    background: linear-gradient(#f5f5f5, #c1c1c1);            
+ }
+ 
+a:hover, a:focus {
+    outline: 0;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,.2);
+    background: #2f6dca;
+    background: linear-gradient(#2f6dca, #2f6dca);
+}
+
+a:active {
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.3) inset;
+}
+ 
